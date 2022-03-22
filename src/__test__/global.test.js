@@ -43,3 +43,9 @@ test('Probar una promesa',() =>{
         expect(string).toBe('aloH')
     })
 });
+
+
+test('Probar async/await', async ()=> {
+ const string = await reverseString2('hola');
+ expect(string).toBe('aloh');
+});
